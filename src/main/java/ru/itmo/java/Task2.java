@@ -1,6 +1,5 @@
 package ru.itmo.java;
 
-@SuppressWarnings("all")
 public class Task2 {
 
     /**
@@ -44,12 +43,8 @@ public class Task2 {
             return false;
         }
 
-        if ((number.compareTo(leftBound) == 1 && number.compareTo(rightBound) == -1)
-                || ((number.equals(leftBound) || number.equals(rightBound)) && inclusively)) {
-            return true;
-        }
-
-        return false;
+        return (number.compareTo(leftBound) == 1 && number.compareTo(rightBound) == -1)
+                || ((number.equals(leftBound) || number.equals(rightBound)) && inclusively);
     }
 
     /**
