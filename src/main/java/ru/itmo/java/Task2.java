@@ -11,21 +11,21 @@ public class Task2 {
      * - вывод 0.9
      */
     double getFractionalPart(double realNumber) {
-        return realNumber - (int) realNumber; //your code here
+        return realNumber - (int) realNumber;
     }
 
     /**
      * Дан символ, верните его код. Не используйте явное приведение типов и любые библиотечные функции
      */
     int charCode(char c) {
-        return c; //your code here
+        return c;
     }
 
     /**
      * Даны 2 целых числа. Проверьте равны ли они
      */
     boolean testIfIntsEqual(Integer a, Integer b) {
-        return a.equals(b); //your code here
+        return a.equals(b);
     }
 
     /**
@@ -45,7 +45,7 @@ public class Task2 {
         }
 
         if ((number.compareTo(leftBound) == 1 && number.compareTo(rightBound) == -1)
-            || ((number.equals(leftBound) || number.equals(rightBound)) && inclusively)) {
+                || ((number.equals(leftBound) || number.equals(rightBound)) && inclusively)) {
             return true;
         }
 
@@ -56,10 +56,7 @@ public class Task2 {
      * Даны 3 символа. Определите является ли хотя бы один из них цифрой 1..9
      */
     boolean atLeastOneIsDigit(char c1, char c2, char c3) {
-        if (Character.isDigit(c1) || Character.isDigit(c2) || Character.isDigit(c3)) {
-            return true;
-        }
-        return false; //your code here
+        return Character.isDigit(c1) || Character.isDigit(c2) || Character.isDigit(c3);
     }
 
     /**
